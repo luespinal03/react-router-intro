@@ -1,13 +1,57 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.NavBar {
+  background-color: #98f5e1;
+}
+
+.navBarH1 {
+  margin-left: 3%;
+}
+
+.navBarLinks {
+  margin-left: 3%;
+}
+
+.homePage {
+  background-color: #b9fbc0;
+}
+
+.homeH1 {
+  margin-left: 3%;
+}
+
+.homeP {
+  margin-left: 3%;
+}
+
+.aboutPage {
+  background-color: #a3c4f3;
+}
+
+.aboutH1 {
+  margin-left: 3%;
+}
+
+.aboutP {
+  margin-left: 3%;
+}
+
+.contactPage {
+  background-color: #cfbaf0;
+}
+
+.contactItems {
+  margin-left: 3%;
 }
