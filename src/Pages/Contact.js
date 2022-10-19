@@ -1,7 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useOutletContext } from "react-router-dom";
 import { useState } from "react"
-import NavBar from "../Components/NavBar"
+
+
+
 const ContactPage = () => {
+
+    const [signupList, handleAddSignup] = useOutletContext();
 
     const navigate = useNavigate();
 
@@ -16,7 +20,7 @@ const ContactPage = () => {
 
     return (
         <div>
-            <NavBar />
+
             <div className="contactPage">
                 <div className="contactItems">
                     <h1>Contact Me !</h1>

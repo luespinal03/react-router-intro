@@ -1,22 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
+import NavBar from './Components/NavBar';
+import { Outlet } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+
+  const [signupList, setSignUpList] = useState([]);
+
+  const handleAddSignup = (firstName, lastName, email) => {
+
+    let newSignup = {
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+    }
+
+    const signupListCopy = [...signupList, newSignup];
+    setSignUpList(signupListCopy);
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <NavBar />
+        <Outlet context={[signupList, handleAddSignup]} />
       </header>
     </div>
   );
