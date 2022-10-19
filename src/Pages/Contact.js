@@ -29,7 +29,7 @@ const ContactPage = () => {
                     <br />
 
 
-                    <input type="email" placeholder="email" onChange={(e) => { setEmail(e.target.value) }} />
+                    <input type="email" placeholder="Email" onChange={(e) => { setEmail(e.target.value) }} />
                     <br />
                     <br />
 
